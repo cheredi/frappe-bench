@@ -1,0 +1,245 @@
+2024-09-04 12:17:43,077 DEBUG cd frappe-bench && python3 -m venv env
+2024-09-04 12:17:45,435 DEBUG cd frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-04 12:17:46,845 DEBUG cd frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-09-04 12:17:50,819 LOG Getting frappe
+2024-09-04 12:17:50,819 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-09-04 12:18:32,946 LOG Installing frappe
+2024-09-04 12:18:32,947 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/frappe 
+2024-09-04 12:19:02,651 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench/apps/frappe && yarn install --check-files
+2024-09-04 12:19:15,345 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 12:19:15,480 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 12:19:15,480 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-04 12:19:15,480 DEBUG cd frappe-bench && bench build
+2024-09-04 12:19:15,627 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build
+2024-09-04 12:19:29,961 LOG setting up backups
+2024-09-04 12:19:35,053 LOG backups were set up
+2024-09-04 12:19:35,054 INFO Bench frappe-bench initialized
+2024-09-04 12:22:00,189 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 12:22:01,658 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 12:22:01,658 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 12:22:01,668 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 12:22:01,669 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 12:27:58,046 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-site view.local
+2024-09-04 12:31:39,318 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use view.local
+2024-09-04 12:31:46,832 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 12:32:08,385 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 12:32:08,958 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 12:32:08,975 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 12:32:08,975 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 12:32:08,982 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 12:48:51,202 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2024-09-04 12:48:51,217 LOG Getting erpnext
+2024-09-04 12:48:51,217 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2024-09-04 12:49:27,631 WARNING cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream executed with exit code 128
+2024-09-04 12:49:27,632 WARNING /Users/tatyanaamugo/trial/bench-env/bin/bench get-app erpnext https://github.com/frappe/erpnext executed with exit code 1
+2024-09-04 12:50:20,147 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2024-09-04 12:50:20,164 LOG Getting erpnext
+2024-09-04 12:50:20,164 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2024-09-04 12:50:33,750 LOG Installing erpnext
+2024-09-04 12:50:33,751 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/erpnext 
+2024-09-04 12:50:54,670 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-04 12:50:56,282 DEBUG bench build --app erpnext
+2024-09-04 12:50:56,432 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build --app erpnext
+2024-09-04 12:50:59,522 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 12:50:59,661 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 12:50:59,661 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-04 12:55:19,408 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 12:55:20,212 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 12:55:20,216 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 12:55:20,218 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 12:55:20,233 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 12:55:34,752 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 12:56:46,102 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use http://localhost:8000
+2024-09-04 12:57:41,169 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use erpnext.local
+2024-09-04 12:57:53,525 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2024-09-04 12:58:04,062 LOG Installing erpnext
+2024-09-04 12:58:04,062 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/erpnext 
+2024-09-04 12:58:06,711 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-04 12:58:07,140 DEBUG bench build --app erpnext
+2024-09-04 12:58:07,286 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build --app erpnext
+2024-09-04 12:58:10,424 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 12:58:10,562 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 12:58:10,563 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-04 12:58:17,287 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench restart
+2024-09-04 12:58:17,435 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 12:58:17,574 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 12:58:17,574 WARNING /Users/tatyanaamugo/trial/bench-env/bin/bench restart executed with exit code 1
+2024-09-04 12:58:58,342 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench find
+2024-09-04 12:59:33,600 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-app library_management
+2024-09-04 12:59:33,605 LOG creating new app library_management
+2024-09-04 13:00:57,771 LOG Installing library_management
+2024-09-04 13:00:57,774 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/library_management 
+2024-09-04 13:00:59,441 DEBUG bench build --app library_management
+2024-09-04 13:00:59,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build --app library_management
+2024-09-04 13:01:01,656 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 13:01:01,793 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 13:01:01,793 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-04 13:01:29,628 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench restart
+2024-09-04 13:01:29,784 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 13:01:29,919 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 13:01:29,919 WARNING /Users/tatyanaamugo/trial/bench-env/bin/bench restart executed with exit code 1
+2024-09-04 13:01:38,392 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:01:38,907 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:01:38,909 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:01:38,916 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:01:38,926 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:05:14,383 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:05:14,903 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:05:14,903 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:05:14,914 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:05:14,919 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:05:28,603 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:06:02,089 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use view.local
+2024-09-04 13:06:07,979 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:06:08,570 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:06:08,571 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:06:08,572 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:06:08,572 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:06:31,393 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench stat
+2024-09-04 13:06:35,155 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:07:19,732 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:07:20,356 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:07:20,363 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:07:20,366 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:07:20,367 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:19:40,991 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:19:41,620 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:19:41,643 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:19:41,645 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:19:41,647 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:22:07,539 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-app library
+2024-09-04 13:22:07,544 LOG creating new app library
+2024-09-04 13:22:44,585 LOG Installing library
+2024-09-04 13:22:44,587 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/library 
+2024-09-04 13:22:46,263 DEBUG bench build --app library
+2024-09-04 13:22:46,403 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build --app library
+2024-09-04 13:22:48,701 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-04 13:22:48,838 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-04 13:22:48,838 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-04 13:23:00,652 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:24:46,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-site library.localhost
+2024-09-04 13:26:22,075 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use library.localhost
+2024-09-04 13:28:23,640 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site library.local.host install-app library_management
+2024-09-04 13:28:38,551 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site library.localhost install-app library_management
+2024-09-04 13:29:02,851 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use library.localhost
+2024-09-04 13:29:10,762 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:29:11,307 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:29:11,308 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:29:11,309 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-04 13:29:11,313 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:39:49,922 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g develope_mode true
+2024-09-04 13:39:55,200 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-04 13:39:55,727 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-04 13:39:55,734 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-04 13:39:55,744 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-04 13:39:55,776 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 00:00:01,479 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --verbose --site all backup
+2024-09-05 08:13:04,379 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g develope_mode true
+2024-09-05 08:13:12,021 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 08:13:12,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 08:13:12,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 08:13:12,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 08:13:12,581 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 08:14:01,980 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use library.localhost
+2024-09-05 08:14:24,455 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 08:16:14,801 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g develope_mode true
+2024-09-05 08:16:19,855 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 08:16:20,468 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 08:16:20,474 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 08:16:20,477 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 08:16:20,478 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 08:16:32,109 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use library.localhost
+2024-09-05 08:20:21,134 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench restart
+2024-09-05 08:20:21,337 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-05 08:20:21,478 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-05 08:20:21,479 WARNING /Users/tatyanaamugo/trial/bench-env/bin/bench restart executed with exit code 1
+2024-09-05 08:21:32,081 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use library.localhost
+2024-09-05 08:25:26,879 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 08:25:27,552 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 08:25:27,552 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 08:25:27,557 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 08:25:27,558 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 09:39:18,789 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site your-site-name list-apps
+2024-09-05 09:39:37,793 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site library.localhost list-apps
+2024-09-05 09:44:00,744 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench export-fixtures
+2024-09-05 09:44:29,912 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site library.localhost migrate
+2024-09-05 09:56:42,857 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site library.localhost mariadb
+2024-09-05 10:04:02,724 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g developer_mode true
+2024-09-05 10:04:14,752 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 10:04:15,269 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 10:04:15,269 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 10:04:15,276 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 10:04:15,280 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 12:00:01,268 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --verbose --site all backup
+2024-09-05 13:03:22,346 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g developer_mode true
+2024-09-05 13:03:25,721 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 13:03:26,306 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 13:03:26,322 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 13:03:26,322 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 13:03:26,325 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 16:25:04,925 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-site see.localhost
+2024-09-05 16:26:14,135 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use see.localhost
+2024-09-05 16:26:19,812 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 16:26:20,448 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 16:26:20,453 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 16:26:20,455 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 16:26:20,455 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 16:30:13,076 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site taty.caps add-to-hosts
+2024-09-05 16:30:36,997 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 16:30:37,694 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 16:30:37,694 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 16:30:37,698 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 16:30:37,704 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 16:33:19,557 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site taty.caps add-to-hosts
+2024-09-05 16:34:37,632 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 16:34:38,308 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 16:34:38,308 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 16:34:38,312 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 16:34:38,316 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 17:24:47,816 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g developer_mode true
+2024-09-05 17:24:54,436 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 17:24:54,972 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 17:24:54,989 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 17:24:54,990 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 17:24:54,993 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 18:00:01,302 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --verbose --site all backup
+2024-09-05 18:04:16,196 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.mode install -app airplane_mode
+2024-09-05 18:04:16,199 WARNING /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.mode install -app airplane_mode executed with exit code 2
+2024-09-05 18:05:25,659 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.mode add-to-hosts
+2024-09-05 18:06:34,504 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost add-to-hosts
+2024-09-05 18:06:57,220 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost add-to-hosts install -app airplane_mode
+2024-09-05 18:07:09,816 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost add-to-hosts install-app airplane_mode
+2024-09-05 18:07:43,248 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.mode install-app airplane_mode
+2024-09-05 18:08:14,420 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost install-app airplane_mode
+2024-09-05 18:09:18,648 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-app airplane_mode
+2024-09-05 18:09:18,653 LOG creating new app airplane_mode
+2024-09-05 18:09:51,727 LOG Installing airplane_mode
+2024-09-05 18:09:51,732 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && /Users/tatyanaamugo/trial/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tatyanaamugo/trial/frappe-bench/apps/airplane_mode 
+2024-09-05 18:09:53,756 DEBUG bench build --app airplane_mode
+2024-09-05 18:09:53,897 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench build --app airplane_mode
+2024-09-05 18:09:59,526 DEBUG cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe:
+2024-09-05 18:09:59,660 WARNING cd /Users/tatyanaamugo/trial/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-09-05 18:09:59,660 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-05 18:10:06,667 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost install-app airplane_mode
+2024-09-05 18:11:35,503 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench new-site airplane.localhost
+2024-09-05 18:13:31,579 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost add-to-hosts
+2024-09-05 18:13:45,737 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost install-app airplane_mode
+2024-09-05 18:14:00,839 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench --site airplane.localhost list-apps
+2024-09-05 18:14:29,894 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g developer_mode true
+2024-09-05 18:14:37,795 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 18:14:38,283 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 18:14:38,285 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 18:14:38,285 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 18:14:38,285 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 18:16:41,812 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench use airplane.localhost
+2024-09-05 18:16:47,039 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 18:16:47,465 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 18:16:47,465 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 18:16:47,471 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule
+2024-09-05 18:16:47,472 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 19:25:30,294 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench set-config -g developer_mode true
+2024-09-05 19:25:35,796 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench start
+2024-09-05 19:25:36,415 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench worker
+2024-09-05 19:25:36,415 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench serve --port 8000
+2024-09-05 19:25:36,421 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench watch
+2024-09-05 19:25:36,428 INFO /Users/tatyanaamugo/trial/bench-env/bin/bench schedule

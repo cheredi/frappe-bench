@@ -1,0 +1,3 @@
+2024-09-05 13:41:11,667 ERROR frappe New Exception collected with id: 2024-09-05 13:41:11.537767-127.0.0.1-d52
+Site: library.localhost
+Form Dict: {'doctype': 'Article', 'docname': 'Coakroach Dance', 'cmd': 'frappe.desk.form.linked_with.get'}

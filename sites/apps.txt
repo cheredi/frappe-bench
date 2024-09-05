@@ -1,0 +1,5 @@
+frappe
+airplane_mode
+library
+erpnext
+library_management

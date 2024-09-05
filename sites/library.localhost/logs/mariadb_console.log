@@ -1,0 +1,4 @@
+_HiStOrY_V2_
+SELECT\040*\040FROM\040`tabDocType`\040WHERE\040name\040=\040'Library\040Member';
+SELECT\040*\040FROM\040`tabDocType`\040WHERE\040name\040=\040'Library\040User';
+exit;
